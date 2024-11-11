@@ -1,0 +1,10 @@
+<input type="text" id="txt">
+<p id="para"></p>
+
+<script>
+function validateName() {
+    let value = document.getElementById("txt").value;
+    let regex = /^[A-Za-z\s]+$/;
+    document.getElementById("para").innerText = regex.test(value) ? "Valid Name" : "Invalid Name";
+}
+</script>

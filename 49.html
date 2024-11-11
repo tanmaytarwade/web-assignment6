@@ -1,0 +1,10 @@
+<input type="text" id="txt">
+<p id="para"></p>
+
+<script>
+function validateMobile() {
+    let value = document.getElementById("txt").value;
+    let regex = /^[0-9]{10}$/;
+    document.getElementById("para").innerText = regex.test(value) ? "Valid Mobile Number" : "Invalid Mobile Number";
+}
+</script>

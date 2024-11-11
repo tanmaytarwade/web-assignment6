@@ -1,0 +1,15 @@
+<input type="text" id="txt">
+<button onclick="displaySquare()">Square It</button>
+<p id="para"></p>
+
+<script>
+function displaySquare() {
+    let value = document.getElementById("txt").value;
+    let number = parseFloat(value);
+    if (!isNaN(number)) {
+        document.getElementById("para").innerText = number * number;
+    } else {
+        document.getElementById("para").innerText = "Please enter a number";
+    }
+}
+</script>

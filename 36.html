@@ -1,0 +1,10 @@
+<input type="text" id="txt">
+<button onclick="displayText()">Display Text</button>
+<p id="para"></p>
+
+<script>
+function displayText() {
+    let text = document.getElementById("txt").value;
+    document.getElementById("para").innerText = text;
+}
+</script>

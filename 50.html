@@ -1,0 +1,10 @@
+<input type="text" id="txt">
+<p id="para"></p>
+
+<script>
+function validateEmail() {
+    let value = document.getElementById("txt").value;
+    let regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    document.getElementById("para").innerText = regex.test(value) ? "Valid Email" : "Invalid Email";
+}
+</script>
